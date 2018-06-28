@@ -12,6 +12,7 @@ RUN yum update
 # init service comand
 RUN yum -y install initscripts
 RUN yum install -y wget
+RUN echo "Asia/shanghai" > /etc/timezone
 
 RUN mkdir -p /opt/java
 RUN mkdir -p $JENKINS_WORRKSTATION
